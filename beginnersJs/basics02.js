@@ -7,4 +7,4 @@ console.table([xyz, accountEmail, accountPassword, accountResidency])
 
 
 let IsLoggedIn = Boolean("0")
-console.log(IsLoggedIn) 
+console.log(IsLoggedIn);

@@ -9,4 +9,4 @@ console.log(typeof null); // object
 // approximately pow(2,53) is the maximum number that can be represented in JS.
 // bigint for significantly larger numbers.
 
-document.write("<h1>hello world</h1>");
+document.write("<h1>hello world</h1>")
