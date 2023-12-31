@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM | Chai aur code</title>
+</head>
+<body style="background-color: #212121; color: #fff;">
+    <div class="parent">
+        <!-- this is a comment -->
+        <!-- these are being counted as lines...but pressing the ENTER key you're creating one more line, and now you get the reason behind nodelist +2 increase...yay😊 --> 
+        <div class="day">Monday</div>
+        <div class="day">Tuesday</div>
+        <div class="day">Wednesday</div>
+        <div class="day">Thursday</div>
+    </div>
+</body>
+
+
+<script>
+
+   const clt = document.querySelector('.parent')
+//    console.log(clt)
+//    console.log(clt.children) // ONLY clt.children can provide the required HTML collection. clt 'd simply return the DIVs
+
+for( i = 0; i < clt.children.length; i++){
+
+    console.log(clt.children[i].innerHTML)
+}
+
+clt.children[1].style.color = "red"
+
+console.log(clt.childNodes)
+    
+    
+
+
+
+
+</script>
+</html>

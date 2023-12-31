@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+
+
+<body style="background-color: #414141; color: blanchedalmond;">
+
+    <!-- <h1 id="hello">Hi there</h1> -->
+
+    <div class="parent">
+        
+        <h1>Hello</h1>
+
+        <div class="child"> 
+            
+            <h1>How're</h1>
+
+            <div class="superchild">
+
+                <h1>You ?</h1>
+
+             </div>
+
+        </div>
+ 
+    </div>
+
+</body>
+
+<script>
+
+    // document.getElementById('hello').addEventListener('onClick', (event) => {
+
+    //     console.log(event)
+    //     // event.stopPropagation() 
+    //     // event.preventDefault()
+
+    // }, false)
+
+
+// EVENTS FOR INTERVIEWS --------------------------------------------------------------------------------------------------------------------------------------------------    
+
+ 
+
+    // type, timestamp, defaultPrevented, target, toElement, srcElement, currentTarget
+    // clientX, clientY, screenX, screenY
+    // altkey, ctrlkey, shiftkey, keycode
+
+//------------------------------------------------------------------------------------------------------------------------------------------------- 
+
+
+
+document.querySelector('.parent').addEventListener("click", () => {
+    
+    console.log("PARENT clicked")
+    
+}, false)
+
+
+document.querySelector('.superchild').addEventListener("click", (event) => {
+    
+    console.log("SUPERCHILD clicked")
+    
+}, false) // bubbling ( down to up ) happens with false, while capturing ( up to down ) happens with true in Events.
+ 
+
+</script>
+
+</html>

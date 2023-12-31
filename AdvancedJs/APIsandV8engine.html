@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="background-color: black; color: aliceblue;">
+ 
+    <h3>
+0	UNSENT	Client has been created. open() not called yet. <br>
+1	OPENED	open() has been called. <br>
+2	HEADERS_RECEIVED	send() has been called, and headers and status are available. <br>
+3	LOADING	Downloading; responseText holds partial data. <br>
+4	DONE	The operation is complete. <br>
+    </h3>
+
+
+</body>
+
+
+<script>
+
+const requestURL = 'https://api.github.com/users/Vrohs';
+
+const xhrReq = new XMLHttpRequest();
+xhrReq.open('GET', requestURL);
+
+xhrReq.onreadystatechange = function (){
+    console.log(xhrReq.readyState);
+
+    if( xhrReq.readyState === 4 ){
+        const response = JSON.parse(this.responseText)
+        console.log(`Followers : ${response.followers}`)
+    }
+}
+
+xhrReq.send();
+
+</script>
+
+
+</html>

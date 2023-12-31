@@ -17,9 +17,9 @@ console.log(Array.isArray(univAssemble))  // questionaire method in arrays which
 
 let n = 9;
 let anArray = [2, 6, 9, 5, [5, 9, 8, [4, 9, 6, [0, 1, 5]]], [0, 5, 6]]
-console.log(anArray.flat(Infinity));  // .flat() method is used to flatten the array. It takes a parameter which is the depth of the array,
-// like in this case the array is nested 4 times so we have to pass 4 as the parameter. 
-//But if we don't know the depth of the array then we can pass Infinity as the parameter.    
+console.log(anArray.flat(Infinity));     // .flat() method is used to flatten the array. It takes a parameter which is the depth of the array,
+                                        // like in this case the array is nested 4 times so we have to pass 4 as the parameter. 
+                                       //But if we don't know the depth of the array then we can pass Infinity as the parameter.    
 
 
 console.log(Array.from("Rohtasvi"));  // method to create an array from the given string.                                    

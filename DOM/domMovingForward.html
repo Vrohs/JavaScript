@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>movingAheadWithDom</title>
+</head>
+<body style="background-color: rgb(2, 36, 23); color: whitesmoke;">
+   
+    <div class = "divClass">
+<h1>Hello World</h1>
+    </div>
+
+</body>
+
+<script>
+    
+    let div = document.createElement("div")
+    console.log(div) // Output: <div></div>
+
+    div.className = "classToDiv"
+    div.id = Math.round(Math.random() * 10 + 1)
+    div.setAttribute("randomAttribute", "povided in key-value pair")
+
+   // div.innerHTML = "<h1>Hi There!</h1>" // slightly less-optimized
+
+// instead use
+    
+    const addText = document.createTextNode("Hello")
+    div.appendChild(addText)
+
+    document.body.appendChild(div)
+     
+
+</script>
+
+</html>

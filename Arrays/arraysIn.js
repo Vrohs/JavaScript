@@ -24,7 +24,7 @@ console.log(Arr); // [ 56, 4, 5, 91, 48, 9 ]
 Arr.pop(); // method for removing last value in an Array.
 console.log(Arr); // [ 56, 4, 5, 91, 48 ]
 
-console.log(); // for a line break in the console.
+console.log(); 
 
 
 Arr.unshift(9);
@@ -56,7 +56,7 @@ console.log(anArr);
 // after using the slice operation our Array still remains the same 
 
 
-console.log(anArr.splice(1,3)); // splice also includes the range but that's not the key difference here.
+console.log(anArr.splice(1,3)); // splice also includes the range but that's not the difference we're seeking here.
 console.log(anArr); // Here we see complete Array is manipulated, the key difference b/w slice() and splice() methods.
 
 // splice() method is used to add or remove elements from an Array.

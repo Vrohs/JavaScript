@@ -1,25 +1,19 @@
-function printMe(){
 
-    console.log("Printing...");
-    
+function addNumbers(num1, num2){
+    // let result = num1 + num2
+    // console.log(result)
+    return num1 + num2
+ }
+
+ console.log(addNumbers(5, 8)); // or we can store the result in a variable and then print it.
+
+
+
+function loginUsermessage(username){
+
+    return ` ${username} just looged in. `
 }
 
-printMe();
+console.log(loginUsermessage("@rohs_vivek"));
 
 
-// declaring formal parameter to a function.
-function printThis(parameter){
-
-    console.log(parameter);  
-
-}
-
-// passing actual parameter or ARGUMENT.
-printThis("Hello World!"); 
-
-
-
-
-// with EXPRESSIONS
-
-const count = 100;
